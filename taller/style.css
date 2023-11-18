@@ -1,0 +1,93 @@
+body{
+    background-color: #7a5c3c;
+}
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta la altura según sea necesario */
+}
+
+.contenido {
+    text-align: center; /* Centra el contenido de texto */
+}
+
+.foto {
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block; /* Hace que el contenedor sea un bloque en línea */
+}
+
+.foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.HabilidadesDuras{
+    background-color: #b08e6b;
+    text-align: center;
+
+}
+/*contenido de las secciones de habilidades duras */
+.columna{
+    background-color: #b08e6b;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+.HabilidadesDuras .fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+
+}
+.HabilidadesDuras .fila .columna{
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.HabilidadesBlandas{
+    background-color: #b08e6b;
+    text-align: center;
+
+}
+/*contenido de las secciones de habilidades Blandas */
+.columna{
+    background-color: #e8c39e;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+.HabilidadesBlandas .fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+
+}
+.HabilidadesBlandas .fila .columna{
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
