@@ -1,20 +1,78 @@
-body{
-    background-color: #7a5c3c;
+.Navbar{
+    background-color:#E0D4C8ff;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    font-size: 17px;
+    /*top: 2vh;*/
+    border-radius: 20px;
+    box-shadow: -2px 7px 6px #473D31;
+    box-sizing: border-box;
+    left: calc((100vw-65vw)/2);
+    
 }
+.Navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 65px 0 65px;
+}
+.Navbar ul li a{
+    text-align: center;
+    display: flex;
+    padding: 0px 15px 0px 15px;
+    white-space: nowrap;
+    border-radius: 15%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(to bottom, #7A5C3C, #ffc382,#FFDBB5);
+}
+body h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+}
+.contenido h1{ 
+    padding: 0px;
+    margin-bottom: 0px;
+    size: 100px;
+    animation-name: miAnimacion;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes miAnimacion {
+from {color: #473D31;}
+to {color: #FFDBB5;}
+}
+
 .Home {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; /* Ajusta la altura según sea necesario */
+    padding: 0 10px 0 10px;
 }
-
+.Descripcion{
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
 .contenido {
     text-align: center; /* Centra el contenido de texto */
 }
 
 .foto {
-    background-color: aqua;
-    margin: 10px;
+    margin-top: 0px;
     padding: 10px;
     display: inline-block; /* Hace que el contenedor sea un bloque en línea */
 }
@@ -32,8 +90,11 @@ body{
 .HabilidadesDuras{
     background-color: #b08e6b;
     text-align: center;
-
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
+
 /*contenido de las secciones de habilidades duras */
 .columna{
     background-color: #b08e6b;
@@ -47,8 +108,8 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 20px 0px 20px;
-    margin-top: 30px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 20px;
 
 }
 .HabilidadesDuras .fila .columna{
@@ -63,7 +124,9 @@ body{
 .HabilidadesBlandas{
     background-color: #b08e6b;
     text-align: center;
-
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 /*contenido de las secciones de habilidades Blandas */
 .columna{
@@ -91,3 +154,92 @@ body{
     flex-direction: column;
     margin-bottom: 40px;
 }
+.Portafolio{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.barra{
+    height: fit-content;
+    width: 40vw;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.sliderphoto{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.sliderphoto ul{
+    padding: 0px;
+    display: flex;
+    width: 300%;
+    animation: cambio 17s infinite alternate-reverse;
+}
+.sliderphoto li{
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+}
+
+.sliderphoto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px;
+}
+.Contacto{
+    text-align: center;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    33%{margin-left: 0;}
+    
+    33%{margin-left: -100%;}
+    66%{margin-left: -100%;}
+
+    66%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+.contacto{
+    list-style: none;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.footer .iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.footer .iconos a svg{
+    width: 35px;
+    opacity: .8;
+}
+
+/*COSAS PARA PERSONALIZAR TEXTOS
+.sobremi .fila .columna h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;  Cambia 'Arial' por la fuente que desees 
+    font-weight: bold; /* Para aplicar negrita 
+    font-size: 24px; /* Tamaño de la fuente 
+    color: #333; /* Color del texto 
+    line-height: 1.5; /* Altura de línea (espaciado entre líneas) 
+    letter-spacing: 1px; /* Espaciado entre letras 
+    text-transform: uppercase; /* Transformación de texto a mayúsculas 
+    Otras propiedades opcionales que puedes ajustar según tus preferencias 
+     */
+
